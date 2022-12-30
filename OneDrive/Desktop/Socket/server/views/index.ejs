@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <script src='jquery-3.6.1.min.js'></script>
+  <!-- <script data-main="scripts/main" src="require.js"></script> -->
+  <!-- <script type="module" src="./main.js"></script> -->
+  <title>SERVER</title>
+</head>
+
+<body>
+  <div id="main-div">
+    <h1>WELCOME TO THE SERVER</h1>
+    <div id="message-container"></div>
+    <a href="https://192.168.1.153:443/camera"><button class="button" id="camera">Take a photo</button></a>
+    <a href="https://192.168.1.153:443/recAudio"><button class="button" id="recAudio">Record Audio</button></a>
+    <button class="button">Record Video</button>
+    <button class="button">Send a message</button>
+    <button class="button">Network Information</button>
+    <button class="button">Find phone</button>
+    <a href="https://192.168.1.153:443/batteryStatus"><button class="button" id="battery">Battery Status</button></a>
+    <button class="button">Device Information</button>
+  </div>
+  <div id="results">
+    <h1>Results</h1>
+    <%=batteryStatus%>
+    <img id="pictureTaken" src=<%=picture%> alt="">
+    <a href="https://192.168.1.153:443/"><button class="button" id="reset">Reset</button></a>
+  </div>
+  </div>
+</body>
+
+</html>

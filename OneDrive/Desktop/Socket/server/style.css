@@ -1,0 +1,59 @@
+body {
+  background-color: blanchedalmond;
+}
+  #main-div {
+    width: 700px;
+    height: 270px;
+    outline: solid 1px black;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+  }
+
+  h1,
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  #message-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(196, 144, 80);
+    width: 350px;
+    margin: auto;
+  }
+
+  .button {
+    display: inline;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* justify-items: center; */
+    background-color: rgb(196, 144, 80);
+    color: white;
+    width: 150px;
+  }
+  #results {
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 10px auto;
+    border: solid black 1px;
+    width: 700px;
+    height: 400px;
+  }
+
+  #pictureTaken{
+    margin-left: 35%;
+    width: 200px;
+    height: 300px;
+  }
+
+  #reset{
+    margin-bottom: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+
