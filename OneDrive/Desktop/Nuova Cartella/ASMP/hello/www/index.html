@@ -13,19 +13,19 @@
   <body>
     <div id="main-div">
       <h1>WELCOME TO THE CLIENT</h1>
-      <!-- <h2>If connected to the server the device can be controlled remotely</h2> -->
-      <!-- <div>
+      <h2>If connected to the server the device can be controlled remotely</h2>
+       <div>
         <button id="connect">Connect to the server</button>
-        <button id="camera">Take a picture!</button>
-      </div> -->
-      <div id="results">
-        <!-- <h1>Results</h1> -->
+      </div>
         <img src="img/logo2.png" alt="" id="test">
+        <input type="text" name="messageToSend" id="messageToSend">
+        <button class="button" id="messageToSendToServer">Send</button>
       </div>
     </div>
   </body>
   <script src="cordova.js"></script>
   <!-- <script src="client/socket.io-client/dist/socket.io.js" type="text/javascript"></script> -->
   <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/clientjs"></script>
   <script src="js/index.js" type="module"></script> 
 </html>

@@ -9,15 +9,38 @@
   <script src='jquery-3.6.1.min.js'></script>
   <!-- <script data-main="scripts/main" src="require.js"></script> -->
   <!-- <script type="module" src="./main.js"></script> -->
-  <title>CAMERA PAGE</title>
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" type="text/javascript"></script>
+  <script type="module" src="./camera.js"></script>
+  <title>SERVER</title>
 </head>
 
 <body>
-  <div>
-    <img id="pictureTaken" src=<%=picture %> alt="">
+  <div id="main-div">
+    <h1>WELCOME TO THE SERVER</h1>
+    <div id="message-container"></div>
+    
+  
+    </script>
+    <a href="https://192.168.0.92:443/camera"><button class="button" id="camera" onclick="" >Take a photo</button></a>
+    <a href="https://192.168.0.92:443/recAudio"><button class="button" id="recAudio">Record Audio</button></a>
+    <button class="button">Record Video</button>
+    <button class="button">Send a message</button>
+    <button class="button">Network Information</button>
+    <button class="button">Find phone</button>
+    <a href="https://192.168.1.153:443/batteryStatus"><button class="button" id="battery">Battery Status</button></a>
+    <button class="button">Device Information</button>
   </div>
-  <a href="/"><button class="button" id="homePage">Home Page</button></a>
-  <a href="/"><button class="button" id="seeTaken">See picture</button></a>
+  <div id="results">
+    <h1>Results</h1>
+    <%=batteryStatus%>
+    <img id="pictureTaken" src="imgs/logo1.png" alt="">
+    <div>
+    <button id="myButton" class="button">See Picture</button>
+    <a href="https://192.168.0.92:443/reset"><button id="resetCamera" class="button">Reset</button></a>
+    <button id="savePhoto" class="button">Save Picture</button>
+  </div>
+  </div>
+  </div>
 </body>
-
+<!-- <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" type="text/javascript"></script> -->
 </html>

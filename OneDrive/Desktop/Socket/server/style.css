@@ -3,7 +3,7 @@ body {
 }
   #main-div {
     width: 700px;
-    height: 270px;
+    height: 160px;
     outline: solid 1px black;
     align-items: center;
     justify-content: center;
@@ -39,21 +39,42 @@ body {
     margin: 10px auto;
     border: solid black 1px;
     width: 700px;
-    height: 400px;
+    height: 375px;
   }
 
   #pictureTaken{
     margin-left: 35%;
     width: 200px;
-    height: 300px;
-  }
-
-  #reset{
-    margin-bottom: 0;
-  }
-
+    height: 400;
+    padding-bottom: 10px
+  } 
   a{
     text-decoration: none;
   }
 
+  #savePhoto, #reset {
+    position: absolute;
+    /* margin-top: 60px; */
+    /* margin-left: -149px; */
+  }
 
+  #myButton{
+    margin-left: 105px;
+  }
+
+  #inputBox{
+    margin-left: 200px;
+  }
+
+  #batteryDiv{
+    display: flex;
+  }
+
+  #batteryDiv p{
+    margin-left: 20px;
+    width: 33%
+  }
+
+  #positionHP{
+    margin-left: 0;
+  }

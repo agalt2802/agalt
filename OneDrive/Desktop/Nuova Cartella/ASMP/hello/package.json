@@ -18,7 +18,8 @@
     "cordova-plugin-battery-status": "^2.0.3",
     "cordova-plugin-camera": "^6.0.0",
     "cordova-plugin-compat": "^1.2.0",
-    "cordova-plugin-geolocation": "^2.4.3"
+    "cordova-plugin-geolocation": "^2.4.3",
+    "cordova-plugin-network-information": "^3.0.0"
   },
   "cordova": {
     "platforms": [
@@ -29,10 +30,12 @@
       "cordova-plugin-camera": {},
       "cordova-plugin-geolocation": {},
       "cordova-plugin-battery-status": {},
-      "cordova-plugin-dialogs": {}
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-network-information": {}
     }
   },
   "dependencies": {
+    "clientjs": "^0.2.1",
     "cordova-plugin-dialogs": "^2.0.2",
     "socket.io-client": "^4.5.4"
   }

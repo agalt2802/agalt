@@ -9,6 +9,8 @@
   <script src='jquery-3.6.1.min.js'></script>
   <!-- <script data-main="scripts/main" src="require.js"></script> -->
   <!-- <script type="module" src="./main.js"></script> -->
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" type="text/javascript"></script>
+  <script type="module" src="./main.js"></script>
   <title>SERVER</title>
 </head>
 
@@ -16,22 +18,20 @@
   <div id="main-div">
     <h1>WELCOME TO THE SERVER</h1>
     <div id="message-container"></div>
-    <a href="https://192.168.1.153:443/camera"><button class="button" id="camera">Take a photo</button></a>
-    <a href="https://192.168.1.153:443/recAudio"><button class="button" id="recAudio">Record Audio</button></a>
-    <button class="button">Record Video</button>
-    <button class="button">Send a message</button>
-    <button class="button">Network Information</button>
-    <button class="button">Find phone</button>
-    <a href="https://192.168.1.153:443/batteryStatus"><button class="button" id="battery">Battery Status</button></a>
-    <button class="button">Device Information</button>
+    <a href="https://192.168.0.92:443/camera"><button class="button" id="camera" onclick="" >Take a photo</button></a>
+    <!-- <a href="https://192.168.0.92:443/recAudio"><button class="button" id="recAudio">Record Audio</button></a> -->
+    <!-- <button class="button">Record Video</button> -->
+    <a href="https://192.168.0.92:443/writeMessage"><button class="button" id="message">Send Message</button></a>
+    <a href="https://192.168.0.92:443/recieveMessage"><button class="button" id="message">Recieved Messages</button></a>
+    <a href="https://192.168.0.92:443/getnetworkInfo"><button class="button" id="networl">Network Info</button></a>
+    <a href="https://192.168.0.92:443/getPosition"><button class="button" id="position">Get Position</button></a>
+    <a href="https://192.168.0.92:443/batteryStatus"><button class="button" id="battery">Battery Status</button></a>
+    <a href="https://192.168.0.92:443/deviceInfo"><button class="button">Device Information</button></a>
   </div>
   <div id="results">
     <h1>Results</h1>
-    <%=batteryStatus%>
-    <img id="pictureTaken" src=<%=picture%> alt="">
-    <a href="https://192.168.1.153:443/"><button class="button" id="reset">Reset</button></a>
+    <img id="pictureTaken" src="imgs/logo1.png" alt="">
   </div>
   </div>
 </body>
-
 </html>

@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css">
-  <script src='jquery-3.6.1.min.js'></script>
-  <!-- <script data-main="scripts/main" src="require.js"></script> -->
-  <script type="module" src="./batteryStatus.js"></script>
   <title>SERVER</title>
 </head>
 
@@ -19,10 +15,14 @@
     HELLO!
     <h2>Results</h2>
     <!-- <button id="myButton" class="button">See Picture</button> -->
-    <img id="pictureTaken" src="imgs/logo1.png" alt="">
-    <button id="batteryInfo" class="button">Battery Info</button>
-  </div>
+    <div><img id="pictureTaken" src="imgs/logo1.png" alt=""></div>
+    <!-- <button id="batteryInfo" class="button">Battery Info</button> -->
+      <div id="networkInfoDiv">
+          <h3>Network Info: </h3>
+          <p><%=network%></p>
+          <a href="https://192.168.0.92:443"><button class="button" id="networkHP">Home Page</button></a>
+      </div>
+    </div>
   </div>
 </body>
-
 </html>
